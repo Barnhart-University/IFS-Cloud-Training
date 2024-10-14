@@ -1,120 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Heroic Features - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-		
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<title>IFS Cloud Role-Based Training</title>
+		<!-- Favicon-->
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<!-- Bootstrap icons-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link
+			href="/css/styles.css"
+			rel="stylesheet"
+		/>
+
 		<style>
 			.hidden {
 				display: none;
 			}
-		
+
+			body {
+				background-color: #f5f5f5;
+			}
+
+			.bg-purple {
+				--bs-bg-opacity: 1;
+				background-color: rgba(
+					var(--bs-indigo),
+					var(--bs-bg-opacity)
+				) !important;
+			}
+			.ifs-blue-steel {
+				background: linear-gradient(9deg, #8427e2 50%, #72c9f8 100%) !important;
+			}
+			#ifs-blue-steel {
+				background: linear-gradient(9deg, #8427e2 50%, #72c9f8 100%) !important;
+			}
+
+			a.fill-div {
+				display: block;
+				height: 100%;
+				width: 100%;
+				text-decoration: none;
+			}
+			.card a:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+
+            .bg-primary {
+                background-color: #414042 !important;
+            }
+
+            .card:hover {
+                transition: .3s ease;
+                background-color: #ececec !important;
+            }
+
 		</style>
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-       <nav class="navbar navbar-expand-lg navbar-dark bg-dark hidden">
-            <div class="container px-lg-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Header-->
-        <header class="py-5">
-            <div class="container px-lg-5">
-                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-                    <div class="m-4 m-lg-5">
-                        <h1 class="display-5 fw-bold">IFS Cloud Role-Based Training</h1>
-                        <p class="fs-4">Select your role below to navigate to your personalized IFS Cloud training.</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Page Content-->
-        <section class="pt-4">
-            <div class="container px-lg-5">
-                <!-- Page Features-->
-                <div class="row gx-lg-5">
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-collection"></i></div>
-                                <h2 class="fs-4 fw-bold">Fresh new layout</h2>
-                                <p class="mb-0">With Bootstrap 5, we've created a fresh new layout for this template!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-cloud-download"></i></div>
-                                <h2 class="fs-4 fw-bold">Free to download</h2>
-                                <p class="mb-0">As always, Start Bootstrap has a powerful collectin of free templates.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-card-heading"></i></div>
-                                <h2 class="fs-4 fw-bold">Jumbotron hero header</h2>
-                                <p class="mb-0">The heroic part of this template is the jumbotron hero header!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-bootstrap"></i></div>
-                                <h2 class="fs-4 fw-bold">Feature boxes</h2>
-                                <p class="mb-0">We've created some custom feature boxes using Bootstrap icons!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-code"></i></div>
-                                <h2 class="fs-4 fw-bold">Simple clean code</h2>
-                                <p class="mb-0">We keep our dependencies up to date and squash bugs as they come!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4 mb-5">
-                        <div class="card bg-light border-0 h-100">
-                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><i class="bi bi-patch-check"></i></div>
-                                <h2 class="fs-4 fw-bold">A name you trust</h2>
-                                <p class="mb-0">Start Bootstrap has been the leader in free Bootstrap templates since 2013!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+	</head>
+	<body>
+		<!-- Responsive navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark hidden">
+			<div class="container px-lg-5">
+				<a class="navbar-brand" href="#!">Start Bootstrap</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#!">Home</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Header-->
+		<header class="py-5">
+			<div class="container px-lg-5">
+				<div
+					class="p-4 p-lg-5 bg-light rounded-3 text-center ifs-blue-steel"
+					style="background-color: #6f42c1 !important"
+				>
+					<div class="m-4 m-lg-5">
+						<h1 class="display-5 fw-bold" style="color: white">
+							IFS Cloud Role-Based Training
+						</h1>
+						<p class="fs-4" style="color: #f5f5f5">
+							Select your role below to navigate to your personalized IFS Cloud
+							training.
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Page Content-->
+		<section class="pt-4">
+			<div class="container px-lg-5">
+				<!-- Page Features-->
+				<div class="row gx-lg-5">
+					<div class="col-lg-6 col-xxl-4 mb-5">
+						<div class="card bg-light border-0 h-100">
+							<a
+								href="https://barnhart.docebosaas.com/learn/course/62/ifs-cloud-training-accounting-ap?generated_by=13054&hash=f56650b9a3e89b451714f12bcd080db6cd4e7656
+                                    "
+								class="fill-div"
+							></a>
+                            
+							<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+								<div
+									class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+								>
+									<i class="bi bi-collection"></i>
+								</div>
+								<h2 class="fs-4 fw-bold">Accounting: AP</h2>
+								<p class="mb-0">
+									With Bootstrap 5, we've created a fresh new layout for this
+									template!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-xxl-4 mb-5">
+						<div class="card bg-light border-0 h-100">
+							<a
+								href="https://barnhart.docebosaas.com/learn/course/63/accounting-ar?generated_by=13054&hash=c78c38c9ad42a342f4b1658da90ae37815aa9cf9
+                                "
+								class="fill-div"
+							></a>
+							<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+								<div
+									class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+								>
+									<i class="bi bi-cloud-download"></i>
+								</div>
+								<h2 class="fs-4 fw-bold">Accounting: AR</h2>
+								<p class="mb-0">
+									As always, Start Bootstrap has a powerful collectin of free
+									templates.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-xxl-4 mb-5">
+						<div class="card bg-light border-0 h-100">
+							<a
+								href="https://barnhart.docebosaas.com/learn/course/64/branch-admin-bcr?generated_by=13054&hash=d4ad6d364a123b9356f8f2f3c5cd029e0b650f1e
+                                "
+								class="fill-div"
+							></a>
+							<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+								<div
+									class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+								>
+									<i class="bi bi-card-heading"></i>
+								</div>
+								<h2 class="fs-4 fw-bold">Branch Admin (BCR)</h2>
+								<p class="mb-0">
+									The heroic part of this template is the jumbotron hero header!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-xxl-4 mb-5">
+						<div class="card bg-light border-0 h-100">
+							<a
+								href="https://barnhart.docebosaas.com/learn/course/65/branch-admin-css?generated_by=13054&hash=0e32be9b5a5055d38314ef5ffe36f0360b78e5fd
+                                "
+								class="fill-div"
+							></a>
+							<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+								<div
+									class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+								>
+									<i class="bi bi-bootstrap"></i>
+								</div>
+								<h2 class="fs-4 fw-bold">Branch Admin (CSS)</h2>
+								<p class="mb-0">
+									We've created some custom feature boxes using Bootstrap icons!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-xxl-4 mb-5">
+						<div class="card bg-light border-0 h-100">
+							<a
+								href="https://barnhart.docebosaas.com/learn/course/66/dispatch?generated_by=13054&hash=7aac3ce036d98adf9a6c75f58b6a3f8efc6f4846
+                                "
+								class="fill-div"
+							></a>
+							<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+								<div
+									class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+								>
+									<i class="bi bi-code"></i>
+								</div>
+								<h2 class="fs-4 fw-bold">Disptach</h2>
+								<p class="mb-0">
+									We keep our dependencies up to date and squash bugs as they
+									come!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-xxl-4 mb-5">
+						<div class="card bg-light border-0 h-100">
+							<a
+								href="https://barnhart.docebosaas.com/learn/course/67/maintenance?generated_by=13054&hash=ec319726fc7e892417cc12edbce5e8d5424ac525
+                                "
+								class="fill-div"
+							></a>
+							<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+								<div
+									class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+								>
+									<i class="bi bi-patch-check"></i>
+								</div>
+								<h2 class="fs-4 fw-bold">Maintenance</h2>
+								<p class="mb-0">
+									Start Bootstrap has been the leader in free Bootstrap
+									templates since 2013!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-xxl-4 mb-5">
+						<div class="card bg-light border-0 h-100">
+							<a
+								href="https://barnhart.docebosaas.com/learn/course/68/project-manager?generated_by=13054&hash=8c14129080a1d77231219a6a0078e0f18ff11ff1
+                                "
+								class="fill-div"
+							></a>
+							<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+								<div
+									class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+								>
+									<i class="bi bi-patch-check"></i>
+								</div>
+								<h2 class="fs-4 fw-bold">Project Manager</h2>
+								<p class="mb-0">
+									Start Bootstrap has been the leader in free Bootstrap
+									templates since 2013!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-xxl-4 mb-5">
+						<div class="card bg-light border-0 h-100">
+							<a
+								href="https://barnhart.docebosaas.com/learn/course/69/salesperson?generated_by=13054&hash=c63194035892a812474ea06275f645a98c9d9577
+                                "
+								class="fill-div"
+							></a>
+							<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+								<div
+									class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+								>
+									<i class="bi bi-patch-check"></i>
+								</div>
+								<h2 class="fs-4 fw-bold">Salesperson</h2>
+								<p class="mb-0">
+									Start Bootstrap has been the leader in free Bootstrap
+									templates since 2013!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="py-5">
+			<section class="pt-4">
+				<div class="container px-lg-5">
+					<div
+						class="p-4 p-lg-5 bg-dark rounded-3 text-center "
+		
+					>
+						<div class="m-4 m-lg-5" style="margin: 0px !important">
+							<h1 class="display-5 fw-bold" style="color: white">
+								Additional Resources
+							</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="">
+			<section class="pt-4">
+				<div class="container px-lg-5">
+					<!-- Additional Resources -->
+					<div class="row gx-lg-5">
+						<div class="col-lg-6 col-xxl-4 mb-5">
+							<div class="card bg-light border-0 h-100">
+								<a
+									href="https://fast.wistia.com/embed/channel/di9kbyimdx"
+									class="fill-div"
+								></a>
+								<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+									<div
+										class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+									>
+										<i class="bi bi-collection"></i>
+									</div>
+									<h2 class="fs-4 fw-bold">IFS TRAINING VIDEO CATALOG</h2>
+									<p class="mb-0">
+										Opens a YouTube-style video dashboard with all IT training
+										content. Search for the video you need.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-xxl-4 mb-5">
+							<div class="card bg-light border-0 h-100">
+								<a
+									href="https://barnhart.docebosaas.com/learn/course/47/boom-up?generated_by=13054&hash=3874c398da34bfa56e389c73453fb8760258751f"
+									class="fill-div"
+								></a>
+								<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+									<div
+										class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+									>
+										<i class="bi bi-collection"></i>
+									</div>
+									<h2 class="fs-4 fw-bold">BOOM UP COURSE</h2>
+                                </br>
+                            
+									<p class="mb-0">
+										Opens the course covering the Boom Up mobile app.
+									</p>
+                                </br>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6 col-xxl-4 mb-5">
+							<div class="card bg-light border-0 h-100">
+								<a
+									href="https://fast.wistia.com/embed/channel/di9kbyimdx?wchannelid=di9kbyimdx&wmediaid=6nofp2edzs"
+									class="fill-div"
+								></a>
+								<div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+									<div
+										class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mt-n4"
+									>
+										<i class="bi bi-collection"></i>
+									</div>
+                                    
+									<h2 class="fs-4 fw-bold">TIPS AND TRICKS</h2>
+                                </br>
+									<p class="mb-0">
+										Videos that assist with IFS setup, navigation and optional processes that help with your role.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- Footer-->
+		<footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white"></p>
+			</div>
+		</footer>
+		<!-- Bootstrap core JS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Core theme JS-->
+		<script src="/js/scripts.js"></script>
+	</body>
 </html>
